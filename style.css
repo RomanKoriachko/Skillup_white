@@ -326,7 +326,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #4EBD09;
+  color: #4D4D4D;
 }
 .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
   font-family: "Exo 2", sans-serif;
@@ -423,7 +423,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 145%;
-  color: #4EBD09;
+  color: #4D4D4D;
 }
 .main .plan-section .plan-section-wrapper .plan-section-item > p:nth-child(2) {
   font-family: "Exo 2", sans-serif;
@@ -461,12 +461,13 @@ body {
 }
 .main .plan-section .plan-section-slider .plan-section-item {
   width: 400px;
-  height: 148px;
+  height: 280px;
   border-radius: 12px;
   padding: 0px 54px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 .main .plan-section .plan-section-slider .plan-section-item > p {
   text-align: left;
@@ -476,7 +477,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 145%;
-  color: #4EBD09;
+  color: #4D4D4D;
+  margin-bottom: 8px;
 }
 .main .plan-section .plan-section-slider .plan-section-item > p:nth-child(2) {
   font-family: "Exo 2", sans-serif;
@@ -487,21 +489,28 @@ body {
 .main .plan-section .plan-section-slider .plan-section-item-1 {
   background-image: url(images/plan-item1-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
+}
+.main .plan-section .plan-section-slider .plan-section-item-1 > p:nth-child(1) {
+  margin-top: 50px;
 }
 .main .plan-section .plan-section-slider .plan-section-item-2 {
   background-image: url(images/plan-item2-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
+  padding: 0px 65px;
+}
+.main .plan-section .plan-section-slider .plan-section-item-2 > p:nth-child(1) {
+  margin-top: 15px;
 }
 .main .plan-section .plan-section-slider .plan-section-item-3 {
   background-image: url(images/plan-item3-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
-  padding: 0px 75px;
+  padding: 0px 70px;
+}
+.main .plan-section .plan-section-slider .plan-section-item-3 > p:nth-child(1) {
+  margin-top: 40px;
 }
 .main .plan-section .plan-section-mobile-slider {
   display: none;
@@ -513,7 +522,6 @@ body {
   padding: 0px 54px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item > p {
   text-align: left;
@@ -523,7 +531,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #4EBD09;
+  color: #4D4D4D;
   margin-bottom: 8px;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item > p:nth-child(2) {
@@ -535,21 +543,21 @@ body {
 .main .plan-section .plan-section-mobile-slider .plan-section-item-1 {
   background-image: url(images/plan-item1-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item-2 {
   background-image: url(images/plan-item2-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item-3 {
   background-image: url(images/plan-item3-img.png);
   background-repeat: no-repeat;
-  background-position: 100%;
   background-size: 100% 100%;
   padding: 0px 75px;
+}
+.main .plan-section .plan-section-mobile-slider .slick-track {
+  margin-left: -16px;
 }
 .main .plan-section .plan-section-btn {
   position: absolute;
@@ -1130,24 +1138,28 @@ body {
   }
   .main .plan-section .plan-section-wrapper .plan-section-item {
     width: 350px;
-    height: 220px;
+    height: 270px;
     padding: 0px 43px;
-    margin-right: -15px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item-1 {
     padding: 0px 60px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item-1 > p:nth-child(1) {
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-2 {
+    padding: 0px 63px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item-2 > p:nth-child(1) {
-    margin-top: 2px;
+    margin-top: 5px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item-3 {
     padding: 0px 70px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item-3 > p:nth-child(1) {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -1282,20 +1294,39 @@ body {
     gap: 50px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item {
+    padding: 0px 40px;
     width: 300px;
-    height: 150px;
+    height: 230px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item > p:nth-child(1) {
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 8px;
   }
   .main .plan-section .plan-section-wrapper .plan-section-item > p:nth-child(2) {
     font-family: "Exo 2", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 145%;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-1 > p:nth-child(1) {
+    margin-top: 40px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-2 {
+    padding: 0px 45px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-2 > p:nth-child(1) {
+    margin-top: 10px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-3 {
+    padding: 0px 50px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-3 > p:nth-child(1) {
+    margin-top: 30px;
   }
   .main .benefits-section .big-container {
     background-image: none;
@@ -1373,6 +1404,11 @@ body {
     margin-left: 17px;
   }
 }
+@media (max-width: 829px) {
+  .main .plan-section .plan-section-wrapper .plan-section-item-1 > p:nth-child(1) {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 715px) {
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text {
     margin-left: 22px;
@@ -1396,6 +1432,9 @@ body {
     line-height: 145%;
     margin-bottom: 24px;
   }
+  .main .plan-section .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
   .main .plan-section .plan-section-wrapper {
     display: none;
   }
@@ -1403,7 +1442,7 @@ body {
     display: block;
   }
   .main .plan-section .plan-section-slider .slick-dots {
-    bottom: -40px;
+    bottom: 65px;
   }
   .main .plan-section .plan-section-slider .slick-dots li {
     margin: 0px 0px;
@@ -1417,6 +1456,9 @@ body {
   }
   .main .plan-section .plan-section-slider .slick-track {
     transform: translate3d(-30px, 0px, 0px);
+  }
+  .main .plan-section .plan-section-btn {
+    bottom: 40px;
   }
 }
 @media (max-width: 576px) {
@@ -1536,10 +1578,11 @@ body {
     max-width: 350px;
     height: 120px;
     padding: 8px;
-    background-color: #333142;
+    background-color: #ffffff;
     box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
     border-radius: 12px;
     margin-right: 8px;
+    margin-bottom: 70px;
   }
   .main .suitable-section .suitable-slider .suitable-item .suitable-item-header {
     gap: 9px;
@@ -1566,7 +1609,7 @@ body {
     margin-top: 8px;
   }
   .main .suitable-section .suitable-slider .slick-dots {
-    bottom: -40px;
+    bottom: 30px;
   }
   .main .suitable-section .suitable-slider .slick-dots li {
     margin: 0px 0px;
@@ -1583,6 +1626,7 @@ body {
   }
   .main .suitable-section .suitable-section-content .suitable-btn {
     width: 100%;
+    margin-top: -20px;
   }
   .main .aspect-section .aspect-section-content {
     gap: 32px;
@@ -1617,9 +1661,22 @@ body {
     margin-bottom: 24px;
     text-align: left;
   }
-  .main .plan-section .plan-section-btn {
+  .main .plan-section .plan-section-slider .plan-section-item {
+    width: 445px;
+    height: 240px;
+  }
+  .main .plan-section .plan-section-slider .plan-section-item-1 > p:nth-child(1) {
+    margin-top: 35px;
+  }
+  .main .plan-section .plan-section-slider .plan-section-item-3 > p:nth-child(1) {
     margin-top: 30px;
-    width: 100%;
+  }
+  .main .plan-section .plan-section-slider .slick-dots {
+    bottom: 55px;
+  }
+  .main .plan-section .plan-section-btn {
+    bottom: 25px;
+    width: 94%;
   }
   .main .benefits-section {
     padding: 48px 0px;
@@ -1813,7 +1870,7 @@ body {
     max-width: 265px;
     height: 120px;
     padding: 8px;
-    background-color: #333142;
+    background-color: #ffffff;
     box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
     border-radius: 12px;
     margin-right: 8px;
@@ -1865,9 +1922,21 @@ body {
     display: block;
   }
   .main .plan-section .plan-section-mobile-slider .plan-section-item {
-    width: 292px;
-    height: 112px;
-    padding: 30px;
+    width: 330px;
+    height: 180px;
+    padding-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 30px;
+  }
+  .main .plan-section .plan-section-mobile-slider .plan-section-item-1 {
+    padding-top: 24px;
+  }
+  .main .plan-section .plan-section-mobile-slider .plan-section-item-2 {
+    padding: 15px 50px;
+  }
+  .main .plan-section .plan-section-mobile-slider .plan-section-item-3 {
+    padding: 23px 55px;
   }
   .main .plan-section .plan-section-mobile-slider .slick-dots {
     bottom: -40px;
@@ -1882,7 +1951,10 @@ body {
     color: #989898;
     opacity: 1;
   }
-  .main .plan-section .plan-section-mobile-slider .slick-track {
-    transform: translate3d(-30px, 0px, 0px);
+  .main .plan-section .plan-section-mobile-slider .slick-dots {
+    bottom: 63px;
+  }
+  .main .plan-section .plan-section-btn {
+    bottom: 32px;
   }
 }

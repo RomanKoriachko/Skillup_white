@@ -80,7 +80,6 @@ window.addEventListener("scroll", function () {
   let screenHeigth = window.screen.height;
   let screenWidth = window.screen.width;
   let sliderHight = slider.getBoundingClientRect().top + window.pageYOffset;
-  console.log(screenWidth);
   if (
     scrollHight >= sliderHight - screenHeigth / 2 &&
     scrollHight <= sliderHight + screenHeigth / 4 &&
