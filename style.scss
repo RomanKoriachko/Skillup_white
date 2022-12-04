@@ -925,9 +925,26 @@ body {
                 justify-content: center;
                 .plan-section-item {
                     width: 350px;
-                    height: 200px;
-                    padding: 0px 50px;
+                    height: 220px;
+                    padding: 0px 43px;
                     margin-right: -15px;
+                }
+                .plan-section-item-1 {
+                    padding: 0px 60px;
+                    >p:nth-child(1) {
+                        margin-top: 20px;
+                    }
+                }
+                .plan-section-item-2 {
+                    >p:nth-child(1) {
+                        margin-top: 2px;
+                    }
+                }
+                .plan-section-item-3 {
+                    padding: 0px 70px;
+                    >p:nth-child(1) {
+                        margin-top: 20px;
+                    }
                 }
             }
         }

@@ -1130,9 +1130,24 @@ body {
   }
   .main .plan-section .plan-section-wrapper .plan-section-item {
     width: 350px;
-    height: 200px;
-    padding: 0px 50px;
+    height: 220px;
+    padding: 0px 43px;
     margin-right: -15px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-1 {
+    padding: 0px 60px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-1 > p:nth-child(1) {
+    margin-top: 20px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-2 > p:nth-child(1) {
+    margin-top: 2px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-3 {
+    padding: 0px 70px;
+  }
+  .main .plan-section .plan-section-wrapper .plan-section-item-3 > p:nth-child(1) {
+    margin-top: 20px;
   }
 }
 @media (max-width: 992px) {
