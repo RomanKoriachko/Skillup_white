@@ -466,7 +466,7 @@ body {
                     margin-top: -20px;
                     .benefits-section-item-wrapper {
                         padding: 24px 0px;
-                        background-color: #17161F;
+                        background-color: #ffffff;
                         cursor: pointer;
                         .benefits-section-item {
                             align-items: center;
@@ -534,9 +534,11 @@ body {
             position: relative;
             .slider-cover {
                 position: absolute;
-                width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 1220px;
                 height: 100%; 
-                background-color: rgba(23, 22, 31, 0.7);
+                background: linear-gradient(147.71deg, rgba(240, 245, 224, 0.4) 20.89%, rgba(224, 245, 227, 0.4) 80.64%);
                 z-index: 10;
                 transition: .3s all;
             }
@@ -575,12 +577,12 @@ body {
                 }
                 .slick-prev {
                     left: 50px;
-                    background-image: url(images/arrow-left.svg);
+                    background-image: url(images/arrow-left-black.svg);
                     z-index: 10;
                 }
                 .slick-next {
                     right: 50px;
-                    background-image: url(images/arrow-right.svg);
+                    background-image: url(images/arrow-right-black.svg);
                     z-index: 10;
                 }
                 &:hover {
@@ -588,12 +590,6 @@ body {
                         opacity: 1;
                         visibility: visible;
                     }
-                }
-            }
-            &:hover {
-                .big-container-cover {
-                    opacity: 0;
-                    visibility: hidden;
                 }
             }
         }
@@ -631,12 +627,12 @@ body {
             .count-section-item {
                 >p:nth-child(1) {
                     @include fonts.h1();
-                    color: #4EBD09;
+                    color: #4D4D4D;
                 }
                 >div{
                     width: 40px;
                     height: 1px;
-                    background-color: #ffffff;
+                    background-color: #4D4D4D;
                     margin-top: 20px;
                     margin-bottom: 10px;
                 }
@@ -661,7 +657,7 @@ body {
             .companies-section-item {
                 width: 184px;
                 height: 184px;
-                border: 4px solid #333142;
+                border: 4px solid #F0F5E0;
                 border-radius: 12px;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -765,7 +761,8 @@ body {
     }
     .form-section {
         padding: 100px 0px;
-        background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+        background: #0D1A30;
+        color: white;
         .form-section-wrapper {
             justify-content: space-evenly;
             .form-section-text {
@@ -955,6 +952,20 @@ body {
                 }
             }
         }
+        .slider-section {
+            .big-container {
+                .slider-cover {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    height: 100%; 
+                    background: linear-gradient(147.71deg, rgba(240, 245, 224, 0.4) 20.89%, rgba(224, 245, 227, 0.4) 80.64%);
+                    z-index: 10;
+                    transition: .3s all;
+                }
+            }
+        }
     }
 }
 
@@ -1135,9 +1146,11 @@ body {
                     }
                     .slick-prev {
                         left: 60px;
+                        background-image: url(images/arrow-left.svg);
                     }
                     .slick-next {
                         right: 60px;
+                        background-image: url(images/arrow-right.svg);
                     }
                     .slick-prev, .slick-next {
                         opacity: 1;

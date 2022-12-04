@@ -612,7 +612,7 @@ body {
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
   padding: 24px 0px;
-  background-color: #17161F;
+  background-color: #ffffff;
   cursor: pointer;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item {
@@ -687,9 +687,11 @@ body {
 }
 .main .slider-section .big-container .slider-cover {
   position: absolute;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1220px;
   height: 100%;
-  background-color: rgba(23, 22, 31, 0.7);
+  background: linear-gradient(147.71deg, rgba(240, 245, 224, 0.4) 20.89%, rgba(224, 245, 227, 0.4) 80.64%);
   z-index: 10;
   transition: 0.3s all;
 }
@@ -727,21 +729,17 @@ body {
 }
 .main .slider-section .big-container .slider .slick-prev {
   left: 50px;
-  background-image: url(images/arrow-left.svg);
+  background-image: url(images/arrow-left-black.svg);
   z-index: 10;
 }
 .main .slider-section .big-container .slider .slick-next {
   right: 50px;
-  background-image: url(images/arrow-right.svg);
+  background-image: url(images/arrow-right-black.svg);
   z-index: 10;
 }
 .main .slider-section .big-container .slider:hover .slick-prev, .main .slider-section .big-container .slider:hover .slick-next {
   opacity: 1;
   visibility: visible;
-}
-.main .slider-section .big-container:hover .big-container-cover {
-  opacity: 0;
-  visibility: hidden;
 }
 .main .career-section {
   padding: 100px 0px;
@@ -805,12 +803,12 @@ body {
   font-weight: 400;
   font-size: 64px;
   line-height: 77px;
-  color: #4EBD09;
+  color: #4D4D4D;
 }
 .main .count-section .count-section-wrapper .count-section-item > div {
   width: 40px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #4D4D4D;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -838,7 +836,7 @@ body {
 .main .companies-section .companies-slider .companies-section-item, .main .companies-section .companies-tablet-slider .companies-section-item {
   width: 184px;
   height: 184px;
-  border: 4px solid #333142;
+  border: 4px solid #F0F5E0;
   border-radius: 12px;
   background-position: center;
   background-repeat: no-repeat;
@@ -940,7 +938,8 @@ body {
 }
 .main .form-section {
   padding: 100px 0px;
-  background: linear-gradient(147.71deg, #F0F5E0 20.89%, #E0F5E3 80.64%);
+  background: #0D1A30;
+  color: white;
 }
 .main .form-section .form-section-wrapper {
   justify-content: space-evenly;
@@ -1158,6 +1157,16 @@ body {
   .main .plan-section .plan-section-wrapper .plan-section-item-3 > p:nth-child(1) {
     margin-top: 30px;
   }
+  .main .slider-section .big-container .slider-cover {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(147.71deg, rgba(240, 245, 224, 0.4) 20.89%, rgba(224, 245, 227, 0.4) 80.64%);
+    z-index: 10;
+    transition: 0.3s all;
+  }
 }
 @media (max-width: 992px) {
   .header {
@@ -1352,9 +1361,11 @@ body {
   }
   .main .slider-section .big-container .slider .slick-prev {
     left: 60px;
+    background-image: url(images/arrow-left.svg);
   }
   .main .slider-section .big-container .slider .slick-next {
     right: 60px;
+    background-image: url(images/arrow-right.svg);
   }
   .main .slider-section .big-container .slider .slick-prev, .main .slider-section .big-container .slider .slick-next {
     opacity: 1;
