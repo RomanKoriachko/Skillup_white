@@ -56,19 +56,28 @@ body {
         }
     }
     .header-menu {
-        gap: 0px 40px;
-        transition: .3s all;
+        gap: 0px 10px;
+        height: 70px;
+        align-items: center;
         .header-menu-item{
             color: #989898;
             text-decoration: none;
             @include fonts.t5();
             cursor: pointer;
-            
+            border: 2px solid transparent;
+            padding: 12px 20px;
+            border-radius: 14px;
+            transition: .3s all;
+            &:hover{
+                border-color: #989898;
+            }
         }
         .active {
             color: #4D4D4D;
             @include fonts.t4();
-            
+            &:hover{
+                border-color: #4D4D4D;
+            }
         }
     }
     .header-button {

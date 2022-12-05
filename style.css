@@ -88,8 +88,9 @@ body {
   height: 60px;
 }
 .header .header-menu {
-  gap: 0px 40px;
-  transition: 0.3s all;
+  gap: 0px 10px;
+  height: 70px;
+  align-items: center;
 }
 .header .header-menu .header-menu-item {
   color: #989898;
@@ -99,6 +100,13 @@ body {
   font-size: 16px;
   line-height: 19px;
   cursor: pointer;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  border-radius: 14px;
+  transition: 0.3s all;
+}
+.header .header-menu .header-menu-item:hover {
+  border-color: #989898;
 }
 .header .header-menu .active {
   color: #4D4D4D;
@@ -106,6 +114,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+}
+.header .header-menu .active:hover {
+  border-color: #4D4D4D;
 }
 .header .header-button {
   width: 184px;
