@@ -57,19 +57,19 @@ body {
     }
     .header-menu {
         gap: 0px 40px;
-        li{
-            list-style: none;
-            .header-menu-item.active {
-                color: #4D4D4D;
-                @include fonts.t4();
-            }
-            .header-menu-item{
-                color: #989898;
-                text-decoration: none;
-                @include fonts.t5();
-            }
+        transition: .3s all;
+        .header-menu-item{
+            color: #989898;
+            text-decoration: none;
+            @include fonts.t5();
+            cursor: pointer;
+            
         }
-        
+        .active {
+            color: #4D4D4D;
+            @include fonts.t4();
+            
+        }
     }
     .header-button {
         width: 184px;

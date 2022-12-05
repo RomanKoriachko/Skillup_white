@@ -1,3 +1,88 @@
+// Navigation
+
+let aboutLessonsBtn = document.querySelector(".about-lessons-btn");
+let aboutUsBtn = document.querySelector(".about-us-btn");
+let contactsBtn = document.querySelector(".contacts-btn");
+
+let header = document.querySelector(".header");
+
+let aspectSection = document.querySelector(".aspect-section");
+let countSection = document.querySelector(".count-section");
+let footer = document.querySelector(".footer");
+
+aboutLessonsBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top:
+      aspectSection.getBoundingClientRect().top +
+      window.pageYOffset -
+      header.clientHeight,
+    behavior: "smooth",
+  });
+});
+aboutUsBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top:
+      countSection.getBoundingClientRect().top +
+      window.pageYOffset -
+      header.clientHeight,
+    behavior: "smooth",
+  });
+});
+contactsBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top:
+      footer.getBoundingClientRect().top +
+      window.pageYOffset -
+      header.clientHeight,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (
+    window.pageYOffset >=
+      aspectSection.getBoundingClientRect().top +
+        window.pageYOffset -
+        header.clientHeight -
+        1 &&
+    aspectSection.getBoundingClientRect().bottom >= 0
+  ) {
+    aboutLessonsBtn.classList.add("active");
+    aboutUsBtn.classList.remove("active");
+    contactsBtn.classList.remove("active");
+  } else {
+    aboutLessonsBtn.classList.remove("active");
+  }
+
+  if (
+    window.pageYOffset >=
+      countSection.getBoundingClientRect().top +
+        window.pageYOffset -
+        header.clientHeight -
+        1 &&
+    countSection.getBoundingClientRect().bottom >= 0
+  ) {
+    aboutLessonsBtn.classList.remove("active");
+    aboutUsBtn.classList.add("active");
+    contactsBtn.classList.remove("active");
+  } else {
+    aboutUsBtn.classList.remove("active");
+  }
+
+  if (
+    pageYOffset + window.innerHeight ===
+    document.documentElement.scrollHeight
+  ) {
+    aboutLessonsBtn.classList.remove("active");
+    aboutUsBtn.classList.remove("active");
+    contactsBtn.classList.add("active");
+  } else {
+    countSection.classList.remove("active");
+  }
+});
+
+// Dropdown Menu
+
 let dropdownMenu = document.querySelectorAll(".benefits-section-item-wrapper");
 let dropdownItem = document.querySelectorAll(".benefits-section-subitem");
 let dropdownButton = document.querySelectorAll(".benefits-section-item-btn");
@@ -8,6 +93,8 @@ for (let i = 0; i < dropdownMenu.length; i++) {
     dropdownButton[i].classList.toggle("active-btn");
   });
 }
+
+// Sliders
 
 $(document).ready(function () {
   $(".slider").slick({});
@@ -71,6 +158,8 @@ $(document).ready(function () {
     autoplaySpeed: 1000,
   });
 });
+
+// slider cover
 
 let slider = document.querySelector(".slider");
 let cover = document.querySelector(".slider-cover");
