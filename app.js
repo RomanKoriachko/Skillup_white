@@ -3,12 +3,26 @@
 let aboutLessonsBtn = document.querySelector(".about-lessons-btn");
 let aboutUsBtn = document.querySelector(".about-us-btn");
 let contactsBtn = document.querySelector(".contacts-btn");
+let registrationBtns = document.querySelectorAll(".registration-btn");
 
 let header = document.querySelector(".header");
 
 let aspectSection = document.querySelector(".aspect-section");
 let countSection = document.querySelector(".count-section");
 let footer = document.querySelector(".footer");
+let formSection = document.querySelector(".form-section");
+
+for (let i = 0; i < registrationBtns.length; i++) {
+  registrationBtns[i].addEventListener("click", function () {
+    window.scrollTo({
+      top:
+        formSection.getBoundingClientRect().top +
+        window.pageYOffset -
+        header.clientHeight,
+      behavior: "smooth",
+    });
+  });
+}
 
 aboutLessonsBtn.addEventListener("click", function () {
   window.scrollTo({
